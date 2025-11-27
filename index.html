@@ -3,9 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniHapz To Do List </title>
+    <title>MiniHapz To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
+<audio id="bgMusic" autoplay loop>
+    <source src="music/Memory.mp3" type="audio/mpeg">
+</audio>
+
+
+    <header>
+        <h1>To Do List</h1>
+    </header>
+
+<main>
+
+    <!-- UTAMA -->
+    <div class="main-container">
+
+        
+        <section class="top-section">
+            <h2>Daftar Kegiatan</h2>
+            <button id="openModalBtn" class="btn-primary">+ Tambah Kegiatan</button>
+        </section>
+
+        <div id="filterBox" class="filter-box" style="display: none;">
+            <input type="text" id="filterNama" placeholder="Cari nama kegiatan...">
+            <input type="date" id="filterTanggal">
+            <button id="resetFilterBtn" class="btn-secondary">Reset</button>
+        </div>
+
+        
+        <table class="kegiatan-table">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama Kegiatan</th>
+            <th>Tanggal</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody id="cardContainer">
+
+    </tbody>
+</table>
+
+
+    </div>
+
+</main>
+
+    <footer>
+        <p>Practice</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h3>Buat Kegiatan Baru</h3>
+                <button id="closeModalBtn" class="close-btn">×</button>
+            </div>
+
+            <!-- FORM -->
+            <div class="modal-body">
+
+                
+                <div class="form-group">
+                    <label>Nama Kegiatan</label>
+                    <input type="text" id="namaKegiatan" placeholder="Misal: Kegiatan Pagi">
+                </div>
+
+                
+                <div class="form-group">
+                    <label>List (Sub-Kegiatan)</label>
+
+                    <div id="listContainer"></div>
+
+                    <button id="addListBtn" class="btn-secondary">+ Tambah List</button>
+                </div>
+
+                
+                <div class="form-group">
+                    <label>Tanggal</label>
+                    <input type="date" id="tanggal">
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button id="saveKegiatanBtn" class="btn-primary">Simpan</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
