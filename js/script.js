@@ -1,3 +1,19 @@
+// BACKGROUND MUSIC BUTTON
+const audio = document.getElementById("bgMusic");
+const audioBtn = document.getElementById("audioBtn"); // pastikan ada di HTML
+
+audioBtn.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.muted = false;
+        audio.play().catch(err => console.log("Gagal mainkan musik:", err));
+        audioBtn.style.opacity = 1; // tombol "on"
+    } else {
+        audio.pause();
+        audioBtn.style.opacity = 0.5; // tombol "off"
+    }
+});
+
+
 // MODAL 
 const openModalBtn = document.getElementById("openModalBtn");
 const modal = document.getElementById("modal");
