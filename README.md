@@ -1,6 +1,5 @@
 MiniHapz To Do List
-<p align="center"> <img src="img/banner.png" alt="MiniHapz Banner" width="600"> </p> <p align="center"> A simple, clean, and interactive To Do List app built using **HTML, CSS, and JavaScript**. </p> <p align="center"> <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square"> <img src="https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JS-blue?style=flat-square"> <img src="https://img.shields.io/badge/Storage-localStorage-orange?style=flat-square"> </p>
-
+<p align="center">A simple, clean, and interactive To Do List app built using <b>HTML, CSS, and JavaScript</b>.</p> <p align="center"> <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square"> <img src="https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JS-blue?style=flat-square"> <img src="https://img.shields.io/badge/Storage-localStorage-orange?style=flat-square"> </p>
 
 Fitur Utama
 - Manajemen Kegiatan
