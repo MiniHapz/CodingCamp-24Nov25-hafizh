@@ -407,3 +407,68 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
+
+/*  RESPONSIVE MODE  */
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    .top-section {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .top-section h2 {
+        font-size: 22px;
+    }
+
+    .filter-box {
+        flex-direction: column;
+    }
+
+
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .kegiatan-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #audioBtn {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .top-section h2 {
+        font-size: 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
